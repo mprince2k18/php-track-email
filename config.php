@@ -1,6 +1,6 @@
 <?php
-	define('PROJECT_URL','https://3b44913e.ngrok.io');	
-	$con = mysqli_connect('127.0.0.1','root','','php_track_emails');
+	define('PROJECT_URL','http://localhost/php-track-email');	
+	$con = mysqli_connect('localhost','root','','php_track_emails');
 	if($con){
 		mysqli_select_db($con,'php_track_emails');
 	}else{

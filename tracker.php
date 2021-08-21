@@ -1,8 +1,12 @@
 <?php
 require ('config.php');
 require ('phpmailer/PHPMailerAutoload.php');
-$mailfrom = "testing.hardik.97531@gmail.com";    //sender's username
-$pwd = "hardik.97531";                 //sender's password
+
+$mailfrom = 'mprince2k16@gmail.com';
+$pwd = "386816b0a6f927";
+
+
+//sender's password
 //-------------------------------------------------------SEND eMail----------------------------------------------------------------------
 if (isset($_POST['mailto'])){
     try {
@@ -17,12 +21,12 @@ if (isset($_POST['mailto'])){
         $body .= "<img border='0' src='".PROJECT_URL."/trackonline.php?email=$mailto&uniq_id=$uniq_id&subject=$subject' width='1' height='1' alt='image for email'>";
         $mail->IsSMTP();                           // tell the class to use SMTP
         $mail->SMTPAuth = true;                  // enable SMTP authentication
-        $mail->Port = 25;                    // set the SMTP server port
-        $mail->Host = "smtp.gmail.com"; // SMTP server
-        $mail->Username = $mailfrom;     // SMTP server username
+        $mail->Port = 2525;             // set the SMTP server port
+        $mail->Host = "smtp.mailtrap.io"; // SMTP server
+        $mail->Username = 'ed66f2434c0f89';     // SMTP server username
         $mail->Password = $pwd;            // SMTP server password
-        $mail->From = $mailfrom;
-        $mail->FromName = "Hardik Chauhan";
+        $mail->From = 'mprince2k16@gmail.com';
+        $mail->FromName = $mailfrom;
         $mail->AddAddress($mailto);
         $mail->Subject = $subject;
         $mail->AltBody = "Please return read receipt to me."; // optional, comment out and test
@@ -63,3 +67,13 @@ if (!empty($_POST['uniq_id'])) {
         . "<input id=\"id1\" name=\"id\" type=\"hidden\" value=\"" . $uniq_id . "\">";  //appended hidden input to keep previous data on the page.
     }
 }
+
+
+
+
+
+
+
+
+
+

@@ -14,7 +14,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Email Open Tracking Using PHP</title>
+    <title>Email Open Tracking</title>
     <script src="js/jquery.min.js" type="text/javascript"></script>
     <script src="js/myjs.js" type="text/javascript"></script>
     <link href="css/style.css" rel="stylesheet" type="text/css" />
@@ -22,7 +22,7 @@
 </head> 
 <body>
     <div id="main">
-        <h1>Email Open Tracking Using PHP</h1>
+        <h1>Email Open Tracking</h1>
         <div id="login">
             <h2>Send Email</h2>
             <hr/>
